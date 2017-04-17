@@ -1,0 +1,115 @@
+body{
+	font-family: 'Bitter', serif;
+}
+
+img{
+	width: 145px;
+	height: 145px;
+}
+
+h1{
+	text-align: center;
+	color: white;
+}
+.btn{
+	cursor:pointer;
+	margin: 2px;
+}
+
+.heading{	
+	background-color: #292929;
+}
+.win{
+	background-color: pink;
+	height: 180px;
+}
+
+#wins{
+	background-color: white;
+	font-size: 60px;
+	width: 180px;
+	text-align: center;
+	margin: auto;
+}
+
+.loss{
+	background-color: orange;
+	height: 180px;
+}
+
+#losses{
+	background-color: white;
+	font-size: 60px;
+	width: 200px;
+	text-align: center;
+	margin: auto;
+}
+
+.targetnumber{
+	background-color: green;
+	color: black;
+	height: 180px;
+}
+
+#targetnumber{
+	background-color: white;
+	font-size: 60px;
+	width: 200px;
+	text-align: center;
+	vertical-align: auto;
+	margin: auto;
+}
+
+.imgbox{
+	background-color: black;
+	height: 180px;
+}
+.total{
+	background-color: #960096;
+	height: 180px;
+	color: black;
+}
+ 
+#total{
+	background-color: white;
+	font-size: 60px;
+	width: 200px;
+	text-align: center;
+	vertical-align: auto;
+	margin: auto;
+}
+
+.howto{
+	background-color: #c0c0c0;
+	color: black;
+	font-size: 14px;
+	vertical-align: center;
+	padding-left: 40px;
+}
+
+.msg{
+	background-color: black;
+	height: 105px;
+}
+
+#msg{
+	color: white ;
+	font-weight: bold;
+	font-size: 50px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+
+#footer{	
+	background-color: #292929;
+	text-align: center;
+	color: white;
+	font-size: 9px;
+	padding:5px;
+	border-top-style: solid;
+    border-top-color: pink;
+    border-width: 3px;
+    width:100%;
+    height: 20px;
+}
