@@ -1,4 +1,4 @@
-Diamond Collection
+Diamond Duel
 
 This is a fun interactive game. It can engage young and old alike. Have fun!!
 
