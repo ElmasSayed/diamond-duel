@@ -1,92 +1,94 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Diamond Collection</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Diamond Duel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <script src="assets/javascript/game.js"></script>
 </head>
 
 <body>
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12 text-center heading"><h1>Diamond Collection</h1></div>
-	</div>
-	<div class="row">
-		<div class="col-md-8">
-			<div class="row">
-			<!-- Wins -->
-				<div class="col-md-6 win text-center"> 
-				 	<h3>Wins</h3>	
-				 	<p id="wins">0</p>				
-				</div>
-			<!-- Losses -->
-				<div class="col-md-6 loss text-center">
-					<h3>Losses</h3>
-					<p id="losses">0</p>				
-				</div>
-			</div>
-		</div>
-		<!-- Target number -->
-		<div class="col-md-4 targetnumber text-center">
-			<h3>Target Number</h3>
-			<p id="targetnumber">0</p>
-		</div>
-	</div>
-	<div class="row">
-	<!-- Diamonds -->
-		<div class="col-md-8 imgbox" >
-			<div class="row">
-				<div class="col-md-3">
-					 <a href="#" class="btn" type="button" id="img1"><img src="assets/images/diamond1.png"></a>
-					 <input type="hidden" id="diamond1"></input>
-				</div>
-				<div class="col-md-3">
-					 <a href="#" class="btn" type="button" id="img2"><img src="assets/images/diamond2.png"></a>
-					 <input type="hidden" id="diamond2"></input>
-				</div>
-				<div class="col-md-3">
-					 <a href="#" class="btn" type="button" id="img3"><img src="assets/images/diamond3.png"></a>
-					 <input type="hidden" id="diamond3"></input>
-				</div>
-				<div class="col-md-3">
-					 <a href="#" class="btn" type="button" id="img4"><img src="assets/images/diamond4.png"></a>
-					 <input type="hidden" id="diamond4"></input>
-				</div>
-			</div>
-		</div>
-		<!-- Total -->
-		<div class="col-md-4 total text-center">
-			<h3>Total</h3>
-			<p id="total">0</p>
-		</div>
-	</div>
-	<div class="row">
-	<!-- How to -->
-		<div class="col-md-8 howto">
-			<h5>How to play:</h5>
-			<p>	Each diamond holds a number value. Click on diamond to add numbers to the Total. <br/>
-				If your Total is equal to the Target Number, "YOU WIN"<br>
-				If your Total is more than the Target Number, "YOU LOSE"<br/>	
-			</p>
-		</div>
-		<!-- Messages -->
-		<div class="col-md-4 msg">
-			<p id="msg">
-			</p>
-		</div>
-	</div>
-		<div class="row">
-		<!-- Footer -->
-			<div class="col-md-12 text-center">
-				<div id="footer">@ Copyright 2017 Elmas Sayed</div>
-			</div>
-		</div>
-</div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center heading">
+                <h1>Diamond Duel</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <!-- Wins -->
+                    <div class="col-md-6 win text-center">
+                        <h3>Wins</h3>
+                        <p id="wins">0</p>
+                    </div>
+                    <!-- Losses -->
+                    <div class="col-md-6 loss text-center">
+                        <h3>Losses</h3>
+                        <p id="losses">0</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Target number -->
+            <div class="col-md-4 targetnumber text-center">
+                <h3>Target Number</h3>
+                <p id="targetnumber">0</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Diamonds -->
+            <div class="col-md-8 imgbox">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="#" class="btn" type="button" id="img1"><img src="assets/images/diamond1.png"></a>
+                        <input type="hidden" id="diamond1"></input>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="btn" type="button" id="img2"><img src="assets/images/diamond2.png"></a>
+                        <input type="hidden" id="diamond2"></input>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="btn" type="button" id="img3"><img src="assets/images/diamond3.png"></a>
+                        <input type="hidden" id="diamond3"></input>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="btn" type="button" id="img4"><img src="assets/images/diamond4.png"></a>
+                        <input type="hidden" id="diamond4"></input>
+                    </div>
+                </div>
+            </div>
+            <!-- Total -->
+            <div class="col-md-4 total text-center">
+                <h3>Total</h3>
+                <p id="total">0</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- How to -->
+            <div class="col-md-8 howto">
+                <h5>How to play:</h5>
+                <p> Each diamond holds a number value. Click on diamond to add numbers to the Total. <br/> If your Total is equal to the Target Number, "YOU WIN"<br> If your Total is more than the Target Number, "YOU LOSE"<br/>
+                </p>
+            </div>
+            <!-- Messages -->
+            <div class="col-md-4 msg">
+                <p id="msg">
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Footer -->
+            <div class="col-md-12 text-center">
+                <div id="footer">@ Copyright 2017 Elmas Sayed</div>
+            </div>
+        </div>
+    </div>
 
 </body>
+
 </html>
